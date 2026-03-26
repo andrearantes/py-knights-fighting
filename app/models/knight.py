@@ -6,7 +6,7 @@ class Knight:
         hp: int,
         armour: list,
         weapon: dict,
-        potion: dict,
+        potion: None,
     ) -> None:
         self.name = name
         self.power = power
