@@ -88,10 +88,9 @@ KNIGHTS = {
 }
 
 
-def battle(knightsconfig):
+def battle(knightsconfig) ->dict:
     # BATTLE PREPARATIONS:
 
-    # lancelot
     lancelot = Knight(
         name=knightsconfig["lancelot"]["name"],
         power=knightsconfig["lancelot"]["power"],
@@ -102,7 +101,6 @@ def battle(knightsconfig):
     )
     lancelot.prepare_for_battle()
 
-    # arthur
     arthur = Knight(
         name=knightsconfig["arthur"]["name"],
         power=knightsconfig["arthur"]["power"],
@@ -113,7 +111,6 @@ def battle(knightsconfig):
     )
     arthur.prepare_for_battle()
 
-    # mordred
     mordred = Knight(
         name=knightsconfig["mordred"]["name"],
         power=knightsconfig["mordred"]["power"],
@@ -124,7 +121,6 @@ def battle(knightsconfig):
     )
     mordred.prepare_for_battle()
 
-    # red_knight
     red_knight = Knight(
         name=knightsconfig["red_knight"]["name"],
         power=knightsconfig["red_knight"]["power"],
