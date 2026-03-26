@@ -1,5 +1,6 @@
 from app.models.knight import Knight
 
+
 KNIGHTS = {
     "lancelot": {
         "name": "Lancelot",
@@ -88,7 +89,7 @@ KNIGHTS = {
 }
 
 
-def battle(knights_config: dict[str, int]) -> dict[str, int]:
+def battle(knights_config: [str, int]) -> dict[str, int]:
     # BATTLE PREPARATIONS:
 
     lancelot = Knight(
@@ -134,10 +135,10 @@ def battle(knights_config: dict[str, int]) -> dict[str, int]:
     # BATTLE:
 
     # 1 Lancelot vs Mordred:
-    lancelot.battle(mordred)
+    lancelot.fight(mordred)
 
     # 2 Arthur vs Red Knight:
-    arthur.battle(red_knight)
+    arthur.fight(red_knight)
 
     # Return battle results:
     return {
