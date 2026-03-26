@@ -88,7 +88,7 @@ KNIGHTS = {
 }
 
 
-def battle(knightsconfig) ->dict:
+def battle(knightsconfig) -> dict:
     # BATTLE PREPARATIONS:
 
     lancelot = Knight(
