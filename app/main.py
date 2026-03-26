@@ -88,50 +88,50 @@ KNIGHTS = {
 }
 
 
-def battle(knightsConfig):
+def battle(knightsconfig):
     # BATTLE PREPARATIONS:
 
     # lancelot
     lancelot = Knight(
-        name=knightsConfig['lancelot']['name'],
-        power=knightsConfig['lancelot']['power'],
-        hp=knightsConfig['lancelot']['hp'],
-        armour=knightsConfig['lancelot']['armour'],
-        weapon=knightsConfig['lancelot']['weapon'],
-        potion=knightsConfig['lancelot']['potion']
+        name=knightsconfig["lancelot"]["name"],
+        power=knightsconfig["lancelot"]["power"],
+        hp=knightsconfig["lancelot"]["hp"],
+        armour=knightsconfig["lancelot"]["armour"],
+        weapon=knightsconfig["lancelot"]["weapon"],
+        potion=knightsconfig["lancelot"]["potion"]
     )
     lancelot.prepare_for_battle()
 
     # arthur
     arthur = Knight(
-        name=knightsConfig['arthur']['name'],
-        power=knightsConfig['arthur']['power'],
-        hp=knightsConfig['arthur']['hp'],
-        armour=knightsConfig['arthur']['armour'],
-        weapon=knightsConfig['arthur']['weapon'],
-        potion=knightsConfig['arthur']['potion']
+        name=knightsconfig["arthur"]["name"],
+        power=knightsconfig["arthur"]["power"],
+        hp=knightsconfig["arthur"]["hp"],
+        armour=knightsconfig["arthur"]["armour"],
+        weapon=knightsconfig["arthur"]["weapon"],
+        potion=knightsconfig["arthur"]["potion"]
     )
     arthur.prepare_for_battle()
 
     # mordred
-    mordred = knight(
-        name=knightsConfig['mordred']['name'],
-        power=knightsConfig['mordred']['power'],
-        hp=knightsConfig['mordred']['hp'],
-        armour=knightsConfig['mordred']['armour'],
-        weapon=knightsConfig['mordred']['weapon'],
-        potion=knightsConfig['mordred']['potion']
+    mordred = Knight(
+        name=knightsconfig["mordred"]["name"],
+        power=knightsconfig["mordred"]["power"],
+        hp=knightsconfig["mordred"]["hp"],
+        armour=knightsconfig["mordred"]["armour"],
+        weapon=knightsconfig["mordred"]["weapon"],
+        potion=knightsconfig["mordred"]["potion"]
     )
     mordred.prepare_for_battle()
 
     # red_knight
-    red_knight = knight(
-        name=knightsConfig['red_knight']['name'],
-        power=knightsConfig['red_knight']['power'],
-        hp=knightsConfig['red_knight']['hp'],
-        armour=knightsConfig['red_knight']['armour'],
-        weapon=knightsConfig['red_knight']['weapon'],
-        potion=knightsConfig['red_knight']['potion']
+    red_knight = Knight(
+        name=knightsconfig["red_knight"]["name"],
+        power=knightsconfig["red_knight"]["power"],
+        hp=knightsconfig["red_knight"]["hp"],
+        armour=knightsconfig["red_knight"]["armour"],
+        weapon=knightsconfig["red_knight"]["weapon"],
+        potion=knightsconfig["red_knight"]["potion"]
     )
     red_knight.prepare_for_battle()
 
