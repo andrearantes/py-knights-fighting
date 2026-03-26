@@ -140,7 +140,7 @@ def battle(knights_config: dict) -> dict[str, int]:
     # 2 Arthur vs Red Knight:
     arthur.fight(red_knight)
 
-    # Return battle results:
+    # Return fight results:
     return {
         lancelot.name: lancelot.hp,
         arthur.name: arthur.hp,

@@ -16,6 +16,7 @@ class Knight:
         self.potion = potion
         self.protection = 0
 
+
     def prepare_for_battle(self) -> None:
         self.protection = sum(part["protection"] for part in self.armour)
 
