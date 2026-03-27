@@ -1,5 +1,6 @@
 from typing import Any
 
+from app.models.knight import Knight
 
 KNIGHTS: dict[
     str,
@@ -99,31 +100,26 @@ KNIGHTS: dict[
 
 
 def combat(knights_config: dict) -> dict[str, int]:
-    knight = []
+    knight_dict = {}
     for knight in knights_config:
+        knight_class = Knight(
+            name=knights_config[knight]["name"],
+            power=knights_config[knight]["power"],
+            hp=knights_config[knight]["hp"],
+            armour=knights_config[knight]["armour"],
+            weapon=knights_config[knight]["weapon"],
+            potion=knights_config[knight]["potion"]
+        )
 
-        lancelot = knight
+        knight_class.prepare_for_battle()
+        knight_dict[knight] = knight_class
 
-        lancelot.prepare_for_battle()
-
-        arthur = knight
-
-        arthur.prepare_for_battle()
-
-        mordred = knight
-
-        mordred.prepare_for_battle()
-
-        red_knight = knight
-
-        red_knight.prepare_for_battle()
-
-    # BATTLE:
-
-    # 1 Lancelot vs Mordred:
+    lancelot = knight_dict["lancelot"]
+    mordred = knight_dict["mordred"]
     lancelot.fight(mordred)
 
-    # 2 Arthur vs Red Knight:
+    arthur = knight_dict["arthur"]
+    red_knight = knight_dict["red_knight"]
     arthur.fight(red_knight)
 
     # Return fight results:
