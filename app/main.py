@@ -1,5 +1,4 @@
 from typing import Any
-from app.main import war
 
 
 KNIGHTS: dict[
@@ -99,7 +98,7 @@ KNIGHTS: dict[
 }
 
 
-def war(knights_config: dict) -> dict[str, int]:
+def combat(knights_config: dict) -> dict[str, int]:
     knight = []
     for knight in knights_config:
 
@@ -136,4 +135,4 @@ def war(knights_config: dict) -> dict[str, int]:
     }
 
 
-print(war(KNIGHTS))
+print(combat(KNIGHTS))
