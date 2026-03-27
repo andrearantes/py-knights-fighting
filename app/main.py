@@ -1,4 +1,5 @@
 from typing import Any
+from app.main import battle
 
 
 KNIGHTS: dict[
