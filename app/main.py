@@ -91,30 +91,14 @@ def battle(knights_config: dict) -> dict[str, int]:
     for knight in knights_config:
 
         lancelot = knight
-        name = knight["lancelot"]["name"],
-        power = knight["lancelot"]["power"],
-        hp = knight["lancelot"]["hp"],
-        armour = knight["lancelot"]["armour"],
-        weapon = knight["lancelot"]["weapon"],
-        potion = knight["lancelot"]["potion"]
+
         lancelot.prepare_for_battle()
 
         arthur = knight
-        name = knight["arthur"]["name"],
-        power = knight["arthur"]["power"],
-        hp = knight["arthur"]["hp"],
-        armour = knight["arthur"]["armour"],
-        weapon = knight["arthur"]["weapon"],
-        potion = knight["arthur"]["potion"]
+
         arthur.prepare_for_battle()
 
         mordred = knight
-        name = knight["mordred"]["name"],
-        power = knight["mordred"]["power"],
-        hp = knight["mordred"]["hp"],
-        armour = knight["mordred"]["armour"],
-        weapon = knight["mordred"]["weapon"],
-        potion = knight["mordred"]["potion"]
 
         mordred.prepare_for_battle()
 
