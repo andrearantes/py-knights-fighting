@@ -1,5 +1,3 @@
-from typing import Any
-
 KNIGHTS = {
     "lancelot": {
         "name": "Lancelot",
@@ -89,10 +87,10 @@ KNIGHTS = {
 
 
 def battle(knights_config: dict) -> dict[str, int]:
-    Knight = []
+    knight = []
     for knight in knights_config:
 
-        lancelot = Knight
+        lancelot = knight
         name = knight["lancelot"]["name"],
         power = knight["lancelot"]["power"],
         hp = knight["lancelot"]["hp"],
@@ -101,7 +99,7 @@ def battle(knights_config: dict) -> dict[str, int]:
         potion = knight["lancelot"]["potion"]
         lancelot.prepare_for_battle()
 
-        arthur = Knight
+        arthur = knight
         name = knight["arthur"]["name"],
         power = knight["arthur"]["power"],
         hp = knight["arthur"]["hp"],
@@ -110,7 +108,7 @@ def battle(knights_config: dict) -> dict[str, int]:
         potion = knight["arthur"]["potion"]
         arthur.prepare_for_battle()
 
-        mordred = Knight
+        mordred = knight
         name = knight["mordred"]["name"],
         power = knight["mordred"]["power"],
         hp = knight["mordred"]["hp"],
@@ -120,7 +118,7 @@ def battle(knights_config: dict) -> dict[str, int]:
 
         mordred.prepare_for_battle()
 
-        red_knight = Knight
+        red_knight = knight
         name = knight["red_knight"]["name"],
         power = knight["red_knight"]["power"],
         hp = knight["red_knight"]["hp"],
