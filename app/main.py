@@ -1,7 +1,11 @@
 from typing import Any
 
 
-KNIGHTS: dict[str, dict[str, str | int | list[Any] | dict[str, str | int] | None] | dict[str, str | int | list[dict[str, str | int]] | dict[str, str | int] | None] | dict[str, str | int | list[dict[str, str | int]] | dict[str, str | int] | dict[str, str | dict[str, int]]]] = {
+KNIGHTS: dict[str, dict[str, str | int | list[Any] | dict[str, str | int]
+                             | None] | dict[str, str | int | list[dict[str,
+str | int]] | dict[str, str | int] | None] | dict[str, str | int | list
+[dict[str, str | int]] | dict[str, str | int] | dict[str, str | dict
+[str, int]]]] = {
     "lancelot": {
         "name": "Lancelot",
         "power": 35,
@@ -94,7 +98,6 @@ def battle(knights_config: dict) -> dict[str, int]:
     for knight in knights_config:
 
         lancelot = knight
-
 
         lancelot.prepare_for_battle()
 
