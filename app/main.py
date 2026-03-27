@@ -119,12 +119,7 @@ def battle(knights_config: dict) -> dict[str, int]:
         mordred.prepare_for_battle()
 
         red_knight = knight
-        name = knight["red_knight"]["name"],
-        power = knight["red_knight"]["power"],
-        hp = knight["red_knight"]["hp"],
-        armour = knight["red_knight"]["armour"],
-        weapon = knight["red_knight"]["weapon"],
-        potion = knight["red_knight"]["potion"]
+
         red_knight.prepare_for_battle()
 
     # BATTLE:
